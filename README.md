@@ -64,17 +64,13 @@ Carbidopa는 MOA-specific pathway의 경우 방향성은 같으나 독성의 발
 <img width="1368" height="600" alt="image" src="https://github.com/user-attachments/assets/53feab2b-1e33-433d-bbf8-01bc09f68969" />
 <img width="1367" height="600" alt="image" src="https://github.com/user-attachments/assets/04d67412-7081-46fa-8006-1abb565eac3f" />
 
-* 아래 그림들은 뭐지
-<img width="1797" height="600" alt="image" src="https://github.com/user-attachments/assets/57a8a088-037f-400b-bc45-264e67a2d524" />
-<img width="678" height="826" alt="image" src="https://github.com/user-attachments/assets/097a5154-7f66-43ac-b062-3c9c2aeb55c9" />
-
 umap한거?
 
 <br><br>
-4. Concordance
-<img width="624" height="906" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
+4. Concordance<br>
 
 <img width="675" height="1350" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
+<img width="624" height="906" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
 
 5. 조직에서 target의 발현정도 - 표로 정리
 

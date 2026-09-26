@@ -31,14 +31,6 @@ E.g., A-172<br>
 <br>
 다만 같은 cluster 내에서도 저 물질의 반응을 구분짓는 주요 유전자가 무엇이었는지 알아보는것도 흥미로울 듯. 또한 세포주마다 Dot plot을 통해 어떤 유전자가 해당 cluster에서 우세한가를 파악하긴 했지만, MOA와 직접적인 연결을 짓기에는 downstream toxic response(?)와 같은 general한 독성반응이었기에 어려웠음. pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.그렇지만 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어가자. 
 <br>
-여기부터는 지우기?
-<img width="535" height="431" alt="image" src="https://github.com/user-attachments/assets/d2896cac-a04d-4f16-85c9-10b405a9a41c" />
-<img width="1212" height="466" alt="image" src="https://github.com/user-attachments/assets/d551f4da-3aae-4918-87a0-afce06c773e6" />
-
-<img width="514" height="314" alt="image" src="https://github.com/user-attachments/assets/934fa2fc-2439-4ab7-b52a-818385c69ef5" />
-
-<img width="1056" height="431" alt="image" src="https://github.com/user-attachments/assets/f4e93453-08ed-48e6-ae11-202656f4e458" />
-- 그냥 클러스터별로 유전자만? 아니면 물질별 umap MOA plot?
 <br><br>
 2. Cell cycle
 cell cycle관련 유전자가 main determinant이기에, cell cycle이 물질 처리후에 변한 물질이 있나 살펴보았음  <br>

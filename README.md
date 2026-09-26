@@ -6,13 +6,9 @@
 2. Quantify concordance 
 <br><br>
 ### Motivation
-Environmental chemicals can act via multiple mode of actions (MOAs). Although some chemicals are well known to act on a specific target site, secondary or off-target effects can occur and alter dominant MOA and toxicity magnitude in reality due to species- and cell-type-specific sensitivity, etc. 
+Environmental chemicals can act through multiple modes of action (MOAs). Although some chemicals are well characterized as acting on specific molecular targets, secondary or off-target effects may also occur. These effects can alter the dominant MOA and the magnitude of toxicity depending on species- and cell-type-specific sensitivity. Here I aimed to investigate whether responses associated with known MOAs are conserved across cell types or exhibit cell-type-specific differences in sensitivity.
 
-Seventeen chemicals from 8 MOA class with environmental relevance were selected from Tahoe-100M single-cell perturbation dataset (Zhang et al., 2026) across 5 different cell lines (HT-29, PANC-1, HepG2/C3A, A-172, BT-474). I aimed to investigate whether responses associated with the known MOA are conserved across cell types or show cell-type-specific differences in sensitivity.
-
-I would like to investigate whether their responses for known MOA are consistent over cell type
-
-그들의 known MOA 가 세포 유형에 따라 반응성이 보존되는지, 특정 세포에서 반응성이 다르게 나타나는지 규명해보고자 하였다.
+Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising approximately 100 million single-cell transcriptomes from 50 cancer cell lines exposed to approximately 1,100 drug–dose conditions. For this project, seventeen chemicals representing eight MOA classes commonly encountered in environmental toxicology were selected from the Tahoe-100M dataset and evaluated across five cell lines: HT-29, PANC-1, HepG2/C3A, A-172, and BT-474.
 
 <br><br>
 ### Main results
@@ -22,8 +18,15 @@ I would like to investigate whether their responses for known MOA are consistent
 근데 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어갔음 하지만, 세포주마다 어떤 유전자나 pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.
 2. Cell cycle
 
-3. Concordance
+3. MOA-specific pathway leading-edge genes
+<img width="1797" height="600" alt="image" src="https://github.com/user-attachments/assets/57a8a088-037f-400b-bc45-264e67a2d524" />
+<img width="678" height="826" alt="image" src="https://github.com/user-attachments/assets/097a5154-7f66-43ac-b062-3c9c2aeb55c9" />
 
+umap한거?  
+5. Concordance
+<img width="624" height="906" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
+
+<img width="675" height="1350" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
 
 4. 조직에서 target의 발현정도 - 표로 정리
 

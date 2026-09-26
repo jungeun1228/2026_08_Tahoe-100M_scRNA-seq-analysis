@@ -71,7 +71,7 @@ umap한거?
 
 ### Limitations and further direction
 암세포주 활용하였음. 특정 세포주와 조직에서의 방향성은 다를 수 있음. 같은 조직내에서도 다양한 세포 유형이 존재하므로.
-
+세포마다 같은 target을 건드렸어도, 다른 pathway가 활성화될 수 있음 (예. AhR -> liver metabolism/ detox 기전 vs. gut이나 brain 은 inflammation/ immunity 관련 기전, breast는 ER signalling과 강한 crosstalk이 있음 - hormone signling,  development등)
 
 <br><br>
 ### References

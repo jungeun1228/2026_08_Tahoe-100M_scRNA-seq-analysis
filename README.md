@@ -19,9 +19,15 @@ Baseline toxicity (represent non-specific MOA)
 1. Clustering + cell cycle 
 예시 세포주 하나
 근데 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어갔음 하지만, 세포주마다 어떤 유전자나 pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.
-2. Cell cycle
 
-3. MOA-specific pathway leading-edge genes
+<img width="535" height="431" alt="image" src="https://github.com/user-attachments/assets/d2896cac-a04d-4f16-85c9-10b405a9a41c" />
+<img width="514" height="314" alt="image" src="https://github.com/user-attachments/assets/934fa2fc-2439-4ab7-b52a-818385c69ef5" />
+
+<img width="1056" height="431" alt="image" src="https://github.com/user-attachments/assets/f4e93453-08ed-48e6-ae11-202656f4e458" />
+
+3. Cell cycle
+
+4. MOA-specific pathway leading-edge genes
 <img width="1797" height="600" alt="image" src="https://github.com/user-attachments/assets/57a8a088-037f-400b-bc45-264e67a2d524" />
 <img width="678" height="826" alt="image" src="https://github.com/user-attachments/assets/097a5154-7f66-43ac-b062-3c9c2aeb55c9" />
 

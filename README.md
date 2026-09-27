@@ -16,9 +16,9 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <br><br>
 ### Main results
 
-1. Single-cell clustering, cell cycle analysis
+#### 1. Single-cell clustering, cell cycle analysis
    - investigated whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
-* When we clustered single cells for each of the five cell lines individually, cell-cycle composition consistently emerged as a major determinant of cell clustering, rather than MOA family.<br>
+* When single cells were clustered for each of the five cell lines individually, cell-cycle composition consistently emerged as a major determinant of cell clustering, rather than MOA family.<br>
 * While cells exposed to most other compounds were distributed across multiple clusters, cells treated with niclosamide and dexamethasone were predominantly concentrated in specific clusters, as shown below. These clusters were characterized by increased expression of genes mainly associated with cell growth, metabolic regulation, and ECM remodeling.<br>
   - PANC-1, Niclosamide 5 µM – a subset of cluster 5, with high expression of ANLN and TPX2<br>
   - A-172, Niclosamide 5 µM – a subset of cluster 5, with high expression of INSIG1 and PPKAG2<br>

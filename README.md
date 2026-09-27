@@ -10,25 +10,25 @@ Environmental chemicals can act through multiple modes of action (MOAs). Althoug
 
 Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising approximately 100 million single-cell transcriptomes from 50 cancer cell lines exposed to approximately 1,100 drug–dose conditions. For this project, seventeen chemicals representing eight MOA classes commonly encountered in environmental toxicology were selected from the Tahoe-100M dataset and evaluated across five cell lines: HT-29, PANC-1, HepG2/C3A, A-172, and BT-474.
 
-* 17 chemicals / 8 MOA classes
-  - A total of 17 substances were selected, including those likely to act through specific MOAs commonly addressed in environmental toxicology, as well as those likely to exhibit non-specific MOA through baseline toxicity.
-<img width="996" height="500" alt="image" src="https://github.com/user-attachments/assets/8562276f-0230-4c91-adc7-e17920bffae1" />
+* 17 chemicals from 8 MOA classes: A total of 17 substances were selected, including those likely to act through specific MOAs commonly addressed in environmental toxicology, as well as those likely to exhibit non-specific MOA through baseline toxicity.
+<img width="797" height="400" alt="image" src="https://github.com/user-attachments/assets/8562276f-0230-4c91-adc7-e17920bffae1" />
 
 <br><br>
 ### Main results
 
-1. Clustering + cell cycle<br>
-특정 MOA를 가진 물질의 target이 많이 발현된 세포주에서 싱글셀들의 반응이 같은 MOA class끼리 clustering되는지 확인하고자 하였음.<br>
-When we clustered single cells for all 5 cell lines individually, cell-cycle composition was major determinant for cell clustering rather than MOA family.<br>
-다른물질들은 여러 cluster에 걸쳐서 나타나는 반면에 Niclosamide랑 dexamethasone이 clustering되는 경향.<br>
-PANC-1 Niclosamide 5 uM - cluster 5의 일부 (ANLN, TPX2 많이 발현)<br>
-A-172 Dexamethasone all doses - cluster 0의 일부 (LOX, IGFBP3 많이 발현)<br>
-A-172 Niclosamide 5 uM - cluster 5의 일부 (INSIG1, PPKAG2 많이 발현)<br>
-E.g., A-172<br>
+1. Single-cell clustering, cell cycle analysis
+   - investigated whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
+* When we clustered single cells for each of the five cell lines individually, cell-cycle composition consistently emerged as a major determinant of cell clustering, rather than MOA family.<br>
+* While cells exposed to most other compounds were distributed across multiple clusters, cells treated with niclosamide and dexamethasone were predominantly concentrated in specific clusters, as shown below. These clusters were characterized by increased expression of genes mainly associated with cell growth, metabolic regulation, and ECM remodeling.<br>
+  - PANC-1, Niclosamide 5 µM – a subset of cluster 5, with high expression of ANLN and TPX2<br>
+  - A-172, Niclosamide 5 µM – a subset of cluster 5, with high expression of INSIG1 and PPKAG2<br>
+  - A-172, Dexamethasone at all doses – a subset of cluster 0, with high expression of LOX and IGFBP3<br>
+<br>
+* Representative figures for A-172
 <img width="956" height="270" alt="image" src="https://github.com/user-attachments/assets/bb957be8-60ed-406d-92da-e60e1d6b436b" />
 
-<img width="437" height="400" alt="image" src="https://github.com/user-attachments/assets/a71f9fb5-9bff-4aaf-9ec9-0d3a5b86cf27" />
-<img width="495" height="400" alt="image" src="https://github.com/user-attachments/assets/c13f5fd0-747f-4f1a-9642-853c92feeaad" />
+<img width="382" height="350" alt="image" src="https://github.com/user-attachments/assets/a71f9fb5-9bff-4aaf-9ec9-0d3a5b86cf27" />
+<img width="433" height="350" alt="image" src="https://github.com/user-attachments/assets/c13f5fd0-747f-4f1a-9642-853c92feeaad" />
 <br>
 다만 같은 cluster 내에서도 저 물질의 반응을 구분짓는 주요 유전자가 무엇이었는지 알아보는것도 흥미로울 듯. 또한 세포주마다 Dot plot을 통해 어떤 유전자가 해당 cluster에서 우세한가를 파악하긴 했지만, MOA와 직접적인 연결을 짓기에는 downstream toxic response(?)와 같은 general한 독성반응이었기에 어려웠음. pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.그렇지만 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어가자. 
 <br>

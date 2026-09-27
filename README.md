@@ -1,5 +1,6 @@
 # 2026_08_Tahoe-100M_scRNA-seq-analysis
-
+<br><br>
+### Notebook summaries
 | Notebook | Description |
 |---|---|
 | **00** | Tahoe-100M data download, condition filtering, and Parquet subset generation |
@@ -7,6 +8,13 @@
 | **02** | scRNA-seq preprocessing, clustering, marker-gene, and cell-cycle analyses |
 | **03** | Pseudobulk aggregation, normalization, and matched-DMSO log2FC calculation |
 | **04** | Gene-level, pathway-level, MOA-specific, and concordance analyses |
+<br><br>
+
+| **00_Tahoe_Data_Download** | Tahoe-100M data download, condition filtering, and Parquet subset generation |
+| **01_Tahoe_AnnData_Construction** | Parquet → sparse AnnData (`.h5ad`) conversion by cell line |
+| **02_Tahoe_scRNA_Preprocessing** | scRNA-seq preprocessing, clustering, marker-gene, and cell-cycle analyses |
+| **03_Tahoe_Pseudobulk_DE** | Pseudobulk aggregation, normalization, and matched-DMSO log2FC calculation |
+| **04_Tahoe_Gene_Pathway_analysis** | Gene-level, pathway-level, MOA-specific, and concordance analyses |
 
 <br><br>
 ### Motivation
@@ -18,7 +26,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <img width="797" height="400" alt="image" src="https://github.com/user-attachments/assets/8562276f-0230-4c91-adc7-e17920bffae1" />
 
 <br><br>
-### Main results
+### Main Findings
 
 #### 1. Single-cell clustering and cluster-specific marker expression
 * To investigate whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
@@ -31,7 +39,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <img width="956" height="270" alt="image" src="https://github.com/user-attachments/assets/bb957be8-60ed-406d-92da-e60e1d6b436b" />
 <img width="382" height="350" alt="image" src="https://github.com/user-attachments/assets/a71f9fb5-9bff-4aaf-9ec9-0d3a5b86cf27" />
 <img width="433" height="350" alt="image" src="https://github.com/user-attachments/assets/c13f5fd0-747f-4f1a-9642-853c92feeaad" />
-<br><br><br>
+<br><br>
 
 #### 2. Cell cycle phase assignment
 * To examine whether compound treatment altered cell-cycle distribution since cell cycle-related genes emerged as a major determinant of cell clustering
@@ -39,7 +47,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 * Niclosamide induced a pronounced redistribution of the cell-cycle profile toward the G2/M compartment, particularly at 5 µM, with concomitant depletion of the G1 population in HT29, PANC1, HepG2/C3A, and A172 cells. In contrast, triclosan, despite belonging to the same MOA class, produced comparatively modest cell-cycle alterations. These findings suggest that strong niclosamide-induced mitochondrial stress was associated with altered G2/M progression, although additional markers are required to distinguish G2 arrest from mitotic arrest and to exclude effects of differential cell loss.
 <br>
 <img width="812" height="400" alt="image" src="https://github.com/user-attachments/assets/ede3bfef-8548-49d1-8dbb-74128e524172" />
-<br><br><br>
+<br><br>
 
 #### 3. Gene set enrichment analysis (GSEA) and leading-edge analysis for MOA-specific/common pathways
   - MOA-specific pathways: one to four pathways from the Hallmark and Reactome gene set collections were selected for each MOA class.

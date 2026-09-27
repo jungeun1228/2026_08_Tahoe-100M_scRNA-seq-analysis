@@ -10,9 +10,9 @@ Environmental chemicals can act through multiple modes of action (MOAs). Althoug
 
 Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising approximately 100 million single-cell transcriptomes from 50 cancer cell lines exposed to approximately 1,100 drug–dose conditions. For this project, seventeen chemicals representing eight MOA classes commonly encountered in environmental toxicology were selected from the Tahoe-100M dataset and evaluated across five cell lines: HT-29, PANC-1, HepG2/C3A, A-172, and BT-474.
 
-* 8 MOA classes
-* 표정리해 넣기
-Baseline toxicity (represent non-specific MOA)
+* 17 chemicals / 8 MOA classes
+  - A total of 17 substances were selected, including those likely to act through specific MOAs commonly addressed in environmental toxicology, as well as those likely to exhibit non-specific MOA through baseline toxicity.
+<img width="996" height="500" alt="image" src="https://github.com/user-attachments/assets/8562276f-0230-4c91-adc7-e17920bffae1" />
 
 <br><br>
 ### Main results

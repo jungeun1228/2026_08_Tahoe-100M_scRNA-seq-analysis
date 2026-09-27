@@ -16,7 +16,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <br><br>
 ### Main results
 
-#### 1. Single-cell clustering, cell cycle analysis
+#### 1. Single-cell clustering and cluster-specific marker expression
 * To investigate whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
 * When single cells were clustered for each of the five cell lines individually, cell-cycle composition consistently emerged as a major determinant of cell clustering, rather than MOA family.<br>
 * While cells exposed to most other compounds were distributed across multiple clusters, cells treated with niclosamide and dexamethasone were predominantly concentrated in specific clusters, as shown below. These clusters were characterized by increased expression of genes mainly associated with cell growth, metabolic regulation, and extracellular matrix (ECM) remodeling.<br>
@@ -37,7 +37,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <img width="812" height="400" alt="image" src="https://github.com/user-attachments/assets/ede3bfef-8548-49d1-8dbb-74128e524172" />
 <br><br><br>
 
-#### 3. Gene set enrichment analysis (GSEA) for MOA-specific/common pathways and leading-edge analysis
+#### 3. Gene set enrichment analysis (GSEA) and leading-edge analysis for MOA-specific/common pathways
   - MOA-specific pathways: one to four pathways from the Hallmark and Reactome gene set collections were selected for each MOA class.
   - Common pathways for stress response: four pathways (E2F_TARGETS, G2M_CHECKPOINT, APOPTOSIS, REACTIVE_OXYGEN_SPECIES_PATHWAY)<br>
 * Overall, compound-induced responses showed both cell line-specific and consistent patterns across the five cell lines.
@@ -59,7 +59,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 * To quantify the consistency of transcriptional responses in MOA-specific pathways across cell lines
 * MOA groups whose primary targets are relatively consistently present across cell types, such as membrane disruptors and uncouplers, showed higher concordance in transcriptional responses across cell lines than other MOA groups. In particular, thymol, a putative baseline toxicant, exhibited the highest cross-cell-line concordance. In contrast, receptor-mediated pathways, such as those involving AhR or PPARγ, showed more pronounced cell line-dependent response patterns, likely reflecting differences in target expression levels as well as in other cellular factors involved in the respective mechanisms.
 
-<img width="675" height="1350" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
+<img width="450" height="900" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
 <img width="482" height="700" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
 
 ### Limitations & Future Directions

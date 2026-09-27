@@ -43,26 +43,22 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 * Overall, compound-induced responses showed both cell line-specific and consistent patterns across the five cell lines.
 * For example, carbidopa, an AhR agonist, showed a largely consistent direction of change in MOA-specific pathways, although the magnitude of gene expression responses varied across cell lines. In contrast, the two pathways related to cell-cycle regulation showed differences not only in response magnitude but also in the direction of change among cell lines. The cell line-specific differences observed in AhR-related MOA-specific pathways (xenobiotic metabolism, phase I functionalization) may be explained by differences in the expression of AhR and its cofactors, as well as in metabolic regulation, which could result in differential sensitivity to the compound across cell types.
 * In contrast, thymol, which acts through a non-specific MOA, showed relatively consistent response directions across cell lines, both at the pathway level and in the subsequent leading-edge gene analysis (results below). This may reflect its non-specific mode of action through hydrophobic partitioning into cell membranes, making the magnitude of its effects less dependent on cell type. This interpretation is consistent with previous research reporting relatively constant critical membrane concentrations across different cell types (Escher et al., 2019).
-
-<br>
 * GSEA for MOA-specific/common pathways
 <img width="714" height="300" alt="image" src="https://github.com/user-attachments/assets/86f8e52c-7095-4da7-8cba-e4fe4178560d" />
 <img width="713" height="300" alt="image" src="https://github.com/user-attachments/assets/9188eae9-b9fb-4f9f-84b5-1d50dde903bb" />
 
-[Leading edge analysis based on MOA-specific pathway]
-같은 MOA class라도 thymol과 chlorhexidine은 세부 MOA가 다른것으로 추정됨. Thymol은 phenol ring을 가진 small molecule로서, hydrophobic partition으로 membrane을 교란시킬 것으로 예상하지만,  chlorhexidine은 cationic amphiphile로서 phospholipid와 직접 결합하는 식으로 membrane에 영향을 주기 때문에 반응의 방향이 다른 것으로 예상된다. 또한 non-specific MOA를 가진 thymol은 세포주가 달라도 유전자 발현 농도나 그 방향이 전반적으로 conservative한 것을 볼 수 있다.
-<img width="912" height="300" alt="image" src="https://github.com/user-attachments/assets/53feab2b-1e33-433d-bbf8-01bc09f68969" />
-<img width="911" height="300" alt="image" src="https://github.com/user-attachments/assets/04d67412-7081-46fa-8006-1abb565eac3f" />
+* Although thymol and chlorhexidine belong to the same broad MOA class, they have been reported to act through distinct underlying mechanisms. Thymol is a small molecule containing a phenolic ring and is expected to disrupt membrane integrity primarily through hydrophobic partitioning into the lipid bilayer. In contrast, chlorhexidine is a cationic amphiphile that affects membranes through direct interactions with phospholipids. In addition, its structural properties may allow it to engage multiple secondary targets, which could contribute to the different directions of cellular responses observed between the two compounds.
+* Moreover, as noted above, thymol, which non-specifically targets the cell membrane, showed a relatively conserved response pattern across cell lines, with both the magnitude and direction of gene expression changes remaining broadly consistent across different cell types.
 
-umap한거?
-
+* Leading edge analysis based on MOA-specific pathways
+<img width="684" height="300" alt="image" src="https://github.com/user-attachments/assets/53feab2b-1e33-433d-bbf8-01bc09f68969" />
+<img width="684" height="300" alt="image" src="https://github.com/user-attachments/assets/04d67412-7081-46fa-8006-1abb565eac3f" />
 <br><br>
-4. Concordance<br>
+
+#### 4. Concordance<br>
 
 <img width="675" height="1350" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
 <img width="624" height="906" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
-
-5. 조직에서 target의 발현정도 - 표로 정리
 
 ### 
 같은 조직에서도 특정 세포주만 활용하였음 - 같은 조직이어도 여러 세포유형을 대상으로 해서 반응성을 보는 것도 필요.

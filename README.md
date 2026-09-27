@@ -8,7 +8,6 @@
 | **02_Tahoe_scRNA_Preprocessing** | scRNA-seq preprocessing, clustering, marker-gene, and cell-cycle analyses |
 | **03_Tahoe_Pseudobulk_DE** | Pseudobulk aggregation, normalization, and matched-DMSO log2FC calculation |
 | **04_Tahoe_Gene_Pathway_analysis** | Gene-level, pathway-level, MOA-specific, and concordance analyses |
-<br><br>
 
 ### Motivation
 Environmental chemicals can act through multiple modes of action (MOAs). Although some chemicals are well characterized as acting on specific molecular targets, secondary or off-target effects may also occur. These effects can alter the dominant MOA and the magnitude of toxicity depending on species- and cell-type-specific sensitivity. Here I aimed to investigate whether responses associated with known MOAs are conserved across cell types or exhibit cell-type-specific differences in sensitivity.

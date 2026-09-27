@@ -28,10 +28,11 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <img width="382" height="350" alt="image" src="https://github.com/user-attachments/assets/a71f9fb5-9bff-4aaf-9ec9-0d3a5b86cf27" />
 <img width="433" height="350" alt="image" src="https://github.com/user-attachments/assets/c13f5fd0-747f-4f1a-9642-853c92feeaad" />
 <br><br><br>
+
 #### 2. cell cycle phase assignment
 * Examined whether compound treatment altered cell-cycle distribution since cell cycle-related genes emerged as a major determinant of cell clustering
 * Among the 17 compounds, niclosamide showed the most pronounced increase in the G2/M population, consistently across four cell lines. Compounds belonging to the redox-cycling or PPARγ MOA classes also induced moderate cell-cycle alterations in some cell lines.
-* Niclosamide induced a pronounced, dose-dependent redistribution of the cell-cycle profile toward the G2/M compartment, particularly at 5 µM, with concomitant depletion of the G1 population in HT29, PANC1, HepG2/C3A, and A172 cells. In contrast, triclosan, despite belonging to the same MOA class, produced comparatively modest cell-cycle alterations. These findings suggest that strong niclosamide-induced mitochondrial stress was associated with altered G2/M progression, although additional markers are required to distinguish G2 arrest from mitotic arrest and to exclude effects of differential cell loss.
+* Niclosamide induced a pronounced redistribution of the cell-cycle profile toward the G2/M compartment, particularly at 5 µM, with concomitant depletion of the G1 population in HT29, PANC1, HepG2/C3A, and A172 cells. In contrast, triclosan, despite belonging to the same MOA class, produced comparatively modest cell-cycle alterations. These findings suggest that strong niclosamide-induced mitochondrial stress was associated with altered G2/M progression, although additional markers are required to distinguish G2 arrest from mitotic arrest and to exclude effects of differential cell loss.
 <br>
 <img width="1379" height="679" alt="image" src="https://github.com/user-attachments/assets/ede3bfef-8548-49d1-8dbb-74128e524172" />
 

@@ -43,40 +43,35 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 * Overall, compound-induced responses showed both cell line-specific and consistent patterns across the five cell lines.
 * For example, carbidopa, an AhR agonist, showed a largely consistent direction of change in MOA-specific pathways, although the magnitude of gene expression responses varied across cell lines. In contrast, the two pathways related to cell-cycle regulation showed differences not only in response magnitude but also in the direction of change among cell lines. The cell line-specific differences observed in AhR-related MOA-specific pathways (xenobiotic metabolism, phase I functionalization) may be explained by differences in the expression of AhR and its cofactors, as well as in metabolic regulation, which could result in differential sensitivity to the compound across cell types.
 * In contrast, thymol, which acts through a non-specific MOA, showed relatively consistent response directions across cell lines, both at the pathway level and in the subsequent leading-edge gene analysis (results below). This may reflect its non-specific mode of action through hydrophobic partitioning into cell membranes, making the magnitude of its effects less dependent on cell type. This interpretation is consistent with previous research reporting relatively constant critical membrane concentrations across different cell types (Escher et al., 2019).
-* GSEA for MOA-specific/common pathways
+* Figure: GSEA for MOA-specific/common pathways for carbidopa and thymol
 <img width="714" height="300" alt="image" src="https://github.com/user-attachments/assets/86f8e52c-7095-4da7-8cba-e4fe4178560d" />
 <img width="713" height="300" alt="image" src="https://github.com/user-attachments/assets/9188eae9-b9fb-4f9f-84b5-1d50dde903bb" />
 
 * Although thymol and chlorhexidine belong to the same broad MOA class, they have been reported to act through distinct underlying mechanisms. Thymol is a small molecule containing a phenolic ring and is expected to disrupt membrane integrity primarily through hydrophobic partitioning into the lipid bilayer. In contrast, chlorhexidine is a cationic amphiphile that affects membranes through direct interactions with phospholipids. In addition, its structural properties may allow it to engage multiple secondary targets, which could contribute to the different directions of cellular responses observed between the two compounds.
 * Moreover, as noted above, thymol, which non-specifically targets the cell membrane, showed a relatively conserved response pattern across cell lines, with both the magnitude and direction of gene expression changes remaining broadly consistent across different cell types.
 
-* Leading edge analysis based on MOA-specific pathways
+* Figure: Leading edge analysis based on MOA-specific pathways for AhR activators and membrane disruptors
 <img width="684" height="300" alt="image" src="https://github.com/user-attachments/assets/53feab2b-1e33-433d-bbf8-01bc09f68969" />
 <img width="684" height="300" alt="image" src="https://github.com/user-attachments/assets/04d67412-7081-46fa-8006-1abb565eac3f" />
 <br><br>
 
-#### 4. Concordance<br>
+#### 4. Concordance analysis across cell lines
+* To quantify the consistency of transcriptional responses in MOA-specific pathways across cell lines
+* MOA groups whose primary targets are relatively consistently present across cell types, such as membrane disruptors and uncouplers, showed higher concordance in transcriptional responses across cell lines than other MOA groups. In particular, thymol, a putative baseline toxicant, exhibited the highest cross-cell-line concordance. In contrast, receptor-mediated pathways, such as those involving AhR or PPARγ, showed more pronounced cell line-dependent response patterns, likely reflecting differences in target expression levels as well as in other cellular factors involved in the respective mechanisms.
 
 <img width="675" height="1350" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
-<img width="624" height="906" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
+<img width="482" height="700" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
 
-### 
-같은 조직에서도 특정 세포주만 활용하였음 - 같은 조직이어도 여러 세포유형을 대상으로 해서 반응성을 보는 것도 필요.
-
-
-### Limitations & further direction
-암세포주 활용하였음. 특정 세포주와 조직에서의 방향성은 다를 수 있음. 같은 조직내에서도 다양한 세포 유형이 존재하므로.
-세포마다 같은 target을 건드렸어도, 다른 pathway가 활성화될 수 있음 (예. AhR -> liver metabolism/ detox 기전 vs. gut이나 brain 은 inflammation/ immunity 관련 기전, breast는 ER signalling과 강한 crosstalk이 있음 - hormone signling,  development등)
-
-
-<br>
-다만 같은 cluster 내에서도 저 물질의 반응을 구분짓는 주요 유전자가 무엇이었는지 알아보는것도 흥미로울 듯. 또한 세포주마다 Dot plot을 통해 어떤 유전자가 해당 cluster에서 우세한가를 파악하긴 했지만, MOA와 직접적인 연결을 짓기에는 downstream toxic response(?)와 같은 general한 독성반응이었기에 어려웠음. pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.그렇지만 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어가자. 
-
+### Limitations & Future Directions
+- The Tahoe-100M dataset lacked biological replicates, precluding robust statistical analysis. Future studies should therefore use datasets with sufficient biological replication and focus on a smaller number of MOA classes to enable more in-depth analyses.
+- Only one specific cell line was analyzed for each tissue type. Given the cellular heterogeneity within individual tissues, future work should examine multiple cell types from the same tissue to better characterize cell type-specific responses.
+- Because cancer cell lines were used in this study, the observed responses may differ from those in normal tissues or non-transformed cells.
 <br><br>
+
 ### References
 
-Beate I. Escher, Lisa Glauch, Maria König, Philipp Mayer, Rita Schlichting; Baseline Toxicity and Volatility Cutoff in Reporter Gene Assays Used for High-Throughput Screening. Chem. Res. Toxicol. 19 August 2019; 32 (8): 1646–1655. https://doi.org/10.1021/acs.chemrestox.9b00182
+Escher BI, Glauch L, König M, Mayer P, Schlichting R. 2019. Baseline toxicity and volatility cutoff in reporter gene assays used for high-throughput screening. Chem Res Toxicol 32(8):1646–1655. DOI:10.1021/acs.chemrestox.9b00182.
 
-OpenAI. 2026. GPT-5, ChatGPT model. OpenAI, San Francisco, CA. Available at: https://chat.openai.com/ (accessed in August-September 2026).
+OpenAI. 2026. ChatGPT (GPT-5.6 Sol) [Large language model]. OpenAI. Available at: https://chatgpt.com/ (accessed September 27, 2026).
 
 Zhang J, Ubas AA, Svensson V, et al. 2026. Tahoe-100M: Mapping drug-induced molecular phenotypes at single-cell resolution. Cell 189(19):5945–5961.e8. DOI:10.1016/j.cell.2026.08.035.

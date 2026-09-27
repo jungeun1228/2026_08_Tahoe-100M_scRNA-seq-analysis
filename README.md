@@ -40,10 +40,12 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 #### 3. Gene set enrichment analysis (GSEA) for MOA-specific/common pathways and leading-edge analysis
   - MOA-specific pathways: one to four pathways from the Hallmark and Reactome gene set collections were selected for each MOA class.
   - Common pathways for stress response: four pathways (E2F_TARGETS, G2M_CHECKPOINT, APOPTOSIS, REACTIVE_OXYGEN_SPECIES_PATHWAY)<br>
-뭐가 눈에 띄는결과??? 공부해보기
-Carbidopa는 MOA-specific pathway의 경우 방향성은 같으나 독성의 발현 농도가 cell line 마다 다름 반면 세포주기를 조절하는 pathway들은 방향성도 세포주마다 달랐음 <br>
-반면에 non-specific MOA인 thymol은 비교적 반응의 방향성이 pathway측면에서도, 그 이후의 leading-edge gene 측면에서도 conservative했다.
-[GSEA for MOA-specific/common pathways]
+* Overall, compound-induced responses showed both cell line-specific and consistent patterns across the five cell lines.
+* For example, carbidopa, an AhR agonist, showed a largely consistent direction of change in MOA-specific pathways, although the magnitude of gene expression responses varied across cell lines. In contrast, the two pathways related to cell-cycle regulation showed differences not only in response magnitude but also in the direction of change among cell lines. The cell line-specific differences observed in AhR-related MOA-specific pathways (xenobiotic metabolism, phase I functionalization) may be explained by differences in the expression of AhR and its cofactors, as well as in metabolic regulation, which could result in differential sensitivity to the compound across cell types.
+* In contrast, thymol, which acts through a non-specific MOA, showed relatively consistent response directions across cell lines, both at the pathway level and in the subsequent leading-edge gene analysis (results below). This may reflect its non-specific mode of action through hydrophobic partitioning into cell membranes, making the magnitude of its effects less dependent on cell type. This interpretation is consistent with previous research reporting relatively constant critical membrane concentrations across different cell types (Escher et al., 2019).
+
+<br>
+* GSEA for MOA-specific/common pathways
 <img width="1382" height="581" alt="image" src="https://github.com/user-attachments/assets/86f8e52c-7095-4da7-8cba-e4fe4178560d" />
 <img width="1380" height="581" alt="image" src="https://github.com/user-attachments/assets/9188eae9-b9fb-4f9f-84b5-1d50dde903bb" />
 
@@ -76,6 +78,8 @@ umap한거?
 
 <br><br>
 ### References
+
+Beate I. Escher, Lisa Glauch, Maria König, Philipp Mayer, Rita Schlichting; Baseline Toxicity and Volatility Cutoff in Reporter Gene Assays Used for High-Throughput Screening. Chem. Res. Toxicol. 19 August 2019; 32 (8): 1646–1655. https://doi.org/10.1021/acs.chemrestox.9b00182
 
 OpenAI. 2026. GPT-5, ChatGPT model. OpenAI, San Francisco, CA. Available at: https://chat.openai.com/ (accessed in August-September 2026).
 

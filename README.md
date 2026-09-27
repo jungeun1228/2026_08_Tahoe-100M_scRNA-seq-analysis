@@ -17,30 +17,26 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 ### Main results
 
 #### 1. Single-cell clustering, cell cycle analysis
-   - investigated whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
+   - Investigated whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
 * When single cells were clustered for each of the five cell lines individually, cell-cycle composition consistently emerged as a major determinant of cell clustering, rather than MOA family.<br>
-* While cells exposed to most other compounds were distributed across multiple clusters, cells treated with niclosamide and dexamethasone were predominantly concentrated in specific clusters, as shown below. These clusters were characterized by increased expression of genes mainly associated with cell growth, metabolic regulation, and ECM remodeling.<br>
+* While cells exposed to most other compounds were distributed across multiple clusters, cells treated with niclosamide and dexamethasone were predominantly concentrated in specific clusters, as shown below. These clusters were characterized by increased expression of genes mainly associated with cell growth, metabolic regulation, and extracellular matrix (ECM) remodeling.<br>
   - PANC-1, Niclosamide 5 µM – a subset of cluster 5, with high expression of ANLN and TPX2<br>
   - A-172, Niclosamide 5 µM – a subset of cluster 5, with high expression of INSIG1 and PPKAG2<br>
   - A-172, Dexamethasone at all doses – a subset of cluster 0, with high expression of LOX and IGFBP3<br>
-<br>
 * Representative figures for A-172
 <img width="956" height="270" alt="image" src="https://github.com/user-attachments/assets/bb957be8-60ed-406d-92da-e60e1d6b436b" />
-
 <img width="382" height="350" alt="image" src="https://github.com/user-attachments/assets/a71f9fb5-9bff-4aaf-9ec9-0d3a5b86cf27" />
 <img width="433" height="350" alt="image" src="https://github.com/user-attachments/assets/c13f5fd0-747f-4f1a-9642-853c92feeaad" />
+<br><br><br>
+#### 2. cell cycle phase assignment
+* Examined whether compound treatment altered cell-cycle distribution since cell cycle-related genes emerged as a major determinant of cell clustering
+* Among the 17 compounds, niclosamide showed the most pronounced increase in the G2/M population, consistently across four cell lines. Compounds belonging to the redox-cycling or PPARγ MOA classes also induced moderate cell-cycle alterations in some cell lines.
+* Niclosamide induced a pronounced, dose-dependent redistribution of the cell-cycle profile toward the G2/M compartment, particularly at 5 µM, with concomitant depletion of the G1 population in HT29, PANC1, HepG2/C3A, and A172 cells. In contrast, triclosan, despite belonging to the same MOA class, produced comparatively modest cell-cycle alterations. These findings suggest that strong niclosamide-induced mitochondrial stress was associated with altered G2/M progression, although additional markers are required to distinguish G2 arrest from mitotic arrest and to exclude effects of differential cell loss.
 <br>
-다만 같은 cluster 내에서도 저 물질의 반응을 구분짓는 주요 유전자가 무엇이었는지 알아보는것도 흥미로울 듯. 또한 세포주마다 Dot plot을 통해 어떤 유전자가 해당 cluster에서 우세한가를 파악하긴 했지만, MOA와 직접적인 연결을 짓기에는 downstream toxic response(?)와 같은 general한 독성반응이었기에 어려웠음. pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.그렇지만 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어가자. 
-<br>
-<br><br>
-2. Cell cycle
-cell cycle관련 유전자가 main determinant이기에, cell cycle이 물질 처리후에 변한 물질이 있나 살펴보았음  <br>
-Niclosamide induced a pronounced, dose-dependent redistribution of the cell-cycle profile toward the G2/M compartment, particularly at 5 µM, with concomitant depletion of the G1 population in HT29, PANC1, HepG2_C3A, and A172 cells. In contrast, triclosan produced comparatively modest cell-cycle alterations. These findings suggest that strong niclosamide-induced mitochondrial stress may interfere with G2/M progression, although additional markers are required to distinguish G2 arrest from mitotic arrest and to exclude effects of differential cell loss.
-<br>
-Niclosamide commonly 뚜렷하게 increased G2/M phase at 5uM in 4 cell lines // PPAR moderate//  다른 세포주에서는 영향이 약하거나 dose-dependent 한 경향이 보이지 않앗음<br>
-<img width="1102" height="266" alt="image" src="https://github.com/user-attachments/assets/c4c822ba-a57d-480a-a505-47fe3a6109e0" />
-<br><br>
-3. Gene set enrichment analysis (GSEA) for MOA-specific/common pathways and leading-edge analysis<br>
+<img width="1379" height="679" alt="image" src="https://github.com/user-attachments/assets/ede3bfef-8548-49d1-8dbb-74128e524172" />
+
+<br><br><br>
+#### 3. Gene set enrichment analysis (GSEA) for MOA-specific/common pathways and leading-edge analysis
   - MOA-specific pathways for each MOA class (1-4 pathways were selected for each)<br>
   - common pathways for stress response (4 pathways: E2F_TARGETS, G2M_CHECKPOINT, APOPTOSIS, REACTIVE_OXYGEN_SPECIES_PATHWAY)<br>
 뭐가 눈에 띄는결과??? 공부해보기
@@ -70,9 +66,13 @@ umap한거?
 같은 조직에서도 특정 세포주만 활용하였음 - 같은 조직이어도 여러 세포유형을 대상으로 해서 반응성을 보는 것도 필요.
 
 
-### Limitations and further direction
+### Limitations & further direction
 암세포주 활용하였음. 특정 세포주와 조직에서의 방향성은 다를 수 있음. 같은 조직내에서도 다양한 세포 유형이 존재하므로.
 세포마다 같은 target을 건드렸어도, 다른 pathway가 활성화될 수 있음 (예. AhR -> liver metabolism/ detox 기전 vs. gut이나 brain 은 inflammation/ immunity 관련 기전, breast는 ER signalling과 강한 crosstalk이 있음 - hormone signling,  development등)
+
+
+<br>
+다만 같은 cluster 내에서도 저 물질의 반응을 구분짓는 주요 유전자가 무엇이었는지 알아보는것도 흥미로울 듯. 또한 세포주마다 Dot plot을 통해 어떤 유전자가 해당 cluster에서 우세한가를 파악하긴 했지만, MOA와 직접적인 연결을 짓기에는 downstream toxic response(?)와 같은 general한 독성반응이었기에 어려웠음. pathway에 의해 그 반응이 구분지어지는지 추가 분석하는것도 흥미로울 것.그렇지만 clustering의 요인을 결정하는건 주요 목적이 아니므로 다음 결과로 넘어가자. 
 
 <br><br>
 ### References

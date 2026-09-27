@@ -1,6 +1,8 @@
 # 2026_08_Tahoe-100M_scRNA-seq-analysis
 
 ### Notebook summaries
+| Notebook | Description |
+|---|---|
 | **00_Tahoe_Data_Download** | Tahoe-100M data download, condition filtering, and Parquet subset generation |
 | **01_Tahoe_AnnData_Construction** | Parquet → sparse AnnData (`.h5ad`) conversion by cell line |
 | **02_Tahoe_scRNA_Preprocessing** | scRNA-seq preprocessing, clustering, marker-gene, and cell-cycle analyses |

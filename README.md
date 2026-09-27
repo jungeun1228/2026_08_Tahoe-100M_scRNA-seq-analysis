@@ -17,7 +17,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 ### Main results
 
 #### 1. Single-cell clustering, cell cycle analysis
-   - Investigated whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
+* To investigate whether single cells exposed to compounds belonging to the same MOA class exhibited similar transcriptomic responses and clustered together
 * When single cells were clustered for each of the five cell lines individually, cell-cycle composition consistently emerged as a major determinant of cell clustering, rather than MOA family.<br>
 * While cells exposed to most other compounds were distributed across multiple clusters, cells treated with niclosamide and dexamethasone were predominantly concentrated in specific clusters, as shown below. These clusters were characterized by increased expression of genes mainly associated with cell growth, metabolic regulation, and extracellular matrix (ECM) remodeling.<br>
   - PANC-1, Niclosamide 5 µM – a subset of cluster 5, with high expression of ANLN and TPX2<br>
@@ -29,23 +29,22 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 <img width="433" height="350" alt="image" src="https://github.com/user-attachments/assets/c13f5fd0-747f-4f1a-9642-853c92feeaad" />
 <br><br><br>
 
-#### 2. cell cycle phase assignment
-* Examined whether compound treatment altered cell-cycle distribution since cell cycle-related genes emerged as a major determinant of cell clustering
+#### 2. Cell cycle phase assignment
+* To examine whether compound treatment altered cell-cycle distribution since cell cycle-related genes emerged as a major determinant of cell clustering
 * Among the 17 compounds, niclosamide showed the most pronounced increase in the G2/M population, consistently across four cell lines. Compounds belonging to the redox-cycling or PPARγ MOA classes also induced moderate cell-cycle alterations in some cell lines.
 * Niclosamide induced a pronounced redistribution of the cell-cycle profile toward the G2/M compartment, particularly at 5 µM, with concomitant depletion of the G1 population in HT29, PANC1, HepG2/C3A, and A172 cells. In contrast, triclosan, despite belonging to the same MOA class, produced comparatively modest cell-cycle alterations. These findings suggest that strong niclosamide-induced mitochondrial stress was associated with altered G2/M progression, although additional markers are required to distinguish G2 arrest from mitotic arrest and to exclude effects of differential cell loss.
 <br>
 <img width="1379" height="679" alt="image" src="https://github.com/user-attachments/assets/ede3bfef-8548-49d1-8dbb-74128e524172" />
-
 <br><br><br>
+
 #### 3. Gene set enrichment analysis (GSEA) for MOA-specific/common pathways and leading-edge analysis
-  - MOA-specific pathways for each MOA class (1-4 pathways were selected for each)<br>
-  - common pathways for stress response (4 pathways: E2F_TARGETS, G2M_CHECKPOINT, APOPTOSIS, REACTIVE_OXYGEN_SPECIES_PATHWAY)<br>
+  - MOA-specific pathways: one to four pathways from the Hallmark and Reactome gene set collections were selected for each MOA class.
+  - Common pathways for stress response: four pathways (E2F_TARGETS, G2M_CHECKPOINT, APOPTOSIS, REACTIVE_OXYGEN_SPECIES_PATHWAY)<br>
 뭐가 눈에 띄는결과??? 공부해보기
 Carbidopa는 MOA-specific pathway의 경우 방향성은 같으나 독성의 발현 농도가 cell line 마다 다름 반면 세포주기를 조절하는 pathway들은 방향성도 세포주마다 달랐음 <br>
 반면에 non-specific MOA인 thymol은 비교적 반응의 방향성이 pathway측면에서도, 그 이후의 leading-edge gene 측면에서도 conservative했다.
 [GSEA for MOA-specific/common pathways]
 <img width="1382" height="581" alt="image" src="https://github.com/user-attachments/assets/86f8e52c-7095-4da7-8cba-e4fe4178560d" />
-
 <img width="1380" height="581" alt="image" src="https://github.com/user-attachments/assets/9188eae9-b9fb-4f9f-84b5-1d50dde903bb" />
 
 [Leading edge analysis based on MOA-specific pathway]

@@ -1,22 +1,13 @@
 # 2026_08_Tahoe-100M_scRNA-seq-analysis
-<br><br>
-### Notebook summaries
-| Notebook | Description |
-|---|---|
-| **00** | Tahoe-100M data download, condition filtering, and Parquet subset generation |
-| **01** | Parquet → sparse AnnData (`.h5ad`) conversion by cell line |
-| **02** | scRNA-seq preprocessing, clustering, marker-gene, and cell-cycle analyses |
-| **03** | Pseudobulk aggregation, normalization, and matched-DMSO log2FC calculation |
-| **04** | Gene-level, pathway-level, MOA-specific, and concordance analyses |
-<br><br>
 
+### Notebook summaries
 | **00_Tahoe_Data_Download** | Tahoe-100M data download, condition filtering, and Parquet subset generation |
 | **01_Tahoe_AnnData_Construction** | Parquet → sparse AnnData (`.h5ad`) conversion by cell line |
 | **02_Tahoe_scRNA_Preprocessing** | scRNA-seq preprocessing, clustering, marker-gene, and cell-cycle analyses |
 | **03_Tahoe_Pseudobulk_DE** | Pseudobulk aggregation, normalization, and matched-DMSO log2FC calculation |
 | **04_Tahoe_Gene_Pathway_analysis** | Gene-level, pathway-level, MOA-specific, and concordance analyses |
-
 <br><br>
+
 ### Motivation
 Environmental chemicals can act through multiple modes of action (MOAs). Although some chemicals are well characterized as acting on specific molecular targets, secondary or off-target effects may also occur. These effects can alter the dominant MOA and the magnitude of toxicity depending on species- and cell-type-specific sensitivity. Here I aimed to investigate whether responses associated with known MOAs are conserved across cell types or exhibit cell-type-specific differences in sensitivity.
 

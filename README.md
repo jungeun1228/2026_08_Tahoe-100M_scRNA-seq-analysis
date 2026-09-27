@@ -46,13 +46,13 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 
 <br>
 * GSEA for MOA-specific/common pathways
-<img width="1382" height="581" alt="image" src="https://github.com/user-attachments/assets/86f8e52c-7095-4da7-8cba-e4fe4178560d" />
-<img width="1380" height="581" alt="image" src="https://github.com/user-attachments/assets/9188eae9-b9fb-4f9f-84b5-1d50dde903bb" />
+<img width="951" height="400" alt="image" src="https://github.com/user-attachments/assets/86f8e52c-7095-4da7-8cba-e4fe4178560d" />
+<img width="950" height="400" alt="image" src="https://github.com/user-attachments/assets/9188eae9-b9fb-4f9f-84b5-1d50dde903bb" />
 
 [Leading edge analysis based on MOA-specific pathway]
 같은 MOA class라도 thymol과 chlorhexidine은 세부 MOA가 다른것으로 추정됨. Thymol은 phenol ring을 가진 small molecule로서, hydrophobic partition으로 membrane을 교란시킬 것으로 예상하지만,  chlorhexidine은 cationic amphiphile로서 phospholipid와 직접 결합하는 식으로 membrane에 영향을 주기 때문에 반응의 방향이 다른 것으로 예상된다. 또한 non-specific MOA를 가진 thymol은 세포주가 달라도 유전자 발현 농도나 그 방향이 전반적으로 conservative한 것을 볼 수 있다.
-<img width="1368" height="600" alt="image" src="https://github.com/user-attachments/assets/53feab2b-1e33-433d-bbf8-01bc09f68969" />
-<img width="1367" height="600" alt="image" src="https://github.com/user-attachments/assets/04d67412-7081-46fa-8006-1abb565eac3f" />
+<img width="912" height="400" alt="image" src="https://github.com/user-attachments/assets/53feab2b-1e33-433d-bbf8-01bc09f68969" />
+<img width="911" height="400" alt="image" src="https://github.com/user-attachments/assets/04d67412-7081-46fa-8006-1abb565eac3f" />
 
 umap한거?
 

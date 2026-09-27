@@ -60,7 +60,7 @@ Tahoe-100M (Zhang et al., 2026) is a large-scale perturbation atlas comprising a
 * MOA groups whose primary targets are relatively consistently present across cell types, such as membrane disruptors and uncouplers, showed higher concordance in transcriptional responses across cell lines than other MOA groups. In particular, thymol, a putative baseline toxicant, exhibited the highest cross-cell-line concordance. In contrast, receptor-mediated pathways, such as those involving AhR or PPARγ, showed more pronounced cell line-dependent response patterns, likely reflecting differences in target expression levels as well as in other cellular factors involved in the respective mechanisms.
 
 <img width="450" height="900" alt="image" src="https://github.com/user-attachments/assets/f1f73ba9-1e37-4740-9c43-b8c345c26ede" />
-<img width="482" height="700" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
+<img width="413" height="600" alt="image" src="https://github.com/user-attachments/assets/0e217db1-fcad-45d4-8224-b17a09447707" />
 
 ### Limitations & Future Directions
 - The Tahoe-100M dataset lacked biological replicates, precluding robust statistical analysis. Future studies should therefore use datasets with sufficient biological replication and focus on a smaller number of MOA classes to enable more in-depth analyses.
